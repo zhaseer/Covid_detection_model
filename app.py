@@ -4,11 +4,13 @@ from PIL import Image
 import tensorflow as tf
 from tensorflow.keras.models import load_model
 
+
 # --- CONFIGURATION ---
 # Define the three possible outcomes
 CLASS_NAMES = {0: 'Normal', 1: 'Viral Pneumonia', 2: 'Covid'}
 # The image size the model expects (224x224 pixels)
-IMAGE_SIZE = 224 
+IMAGE_SIZE = 224
+
 
 # --- MODEL LOADING ---
 # Use cache so the model only loads once
